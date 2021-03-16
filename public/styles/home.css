@@ -1,0 +1,30 @@
+.main-img {
+  width: 100%;
+}
+
+/* Paragraph Styling */
+
+.features-para {
+  top: 57rem;
+  text-align: center;
+  margin: 100px auto;
+  line-height: 2;
+  padding: 50px 500px;
+  background: rgb(240, 240, 240);
+}
+
+.features-para .text {
+  display: block;
+  position: relative;
+  padding-top: 10px;
+  color: #768282;
+}
+
+.features-para {
+  display: block;
+}
+
+/* Cards styling */
+.card-decks {
+  display: block;
+}

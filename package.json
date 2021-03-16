@@ -1,0 +1,26 @@
+{
+  "name": "e-advertisement-website",
+  "version": "1.0.0",
+  "description": "This is an E-advertisement-website",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mdb-ui-kit": "^3.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yash Vishe",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yashvishe13/E-advertisement-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yashvishe13/E-advertisement-website/issues"
+  },
+  "homepage": "https://github.com/Yashvishe13/E-advertisement-website#readme"
+}

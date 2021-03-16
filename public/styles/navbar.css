@@ -1,0 +1,31 @@
+/* navbar styling */
+
+.box {
+  padding: 5px;
+}
+
+.tabs {
+  font-size: larger;
+  margin-right: 20px;
+}
+
+.tab-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  background-color: black;
+  color: aliceblue;
+}
+
+.brand-name {
+  font-size: 35px;
+  padding: 5px;
+  margin-left: 50px;
+}
+
+.sign-in {
+  margin-right: 60px;
+  padding: 10px 25px;
+}
