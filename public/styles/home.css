@@ -2,6 +2,21 @@
   width: 100%;
 }
 
+.img-item {
+  height: 200px;
+  transform: scale(1);
+  transition: transform 0.5s ease;
+}
+
+.img-item:hover {
+  transform: scale(1.8);
+}
+
+.overflow {
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
 /* Paragraph Styling */
 
 .features-para {
@@ -27,4 +42,32 @@
 /* Cards styling */
 .card-decks {
   display: block;
+}
+
+.card-text {
+  text-align: center;
+  padding: 20px;
+  line-height: 2;
+  color: #768282;
+}
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  color: #4b5057;
+}
+.card-item {
+  width: 350px;
+  padding-bottom: 50px;
+  align-items: center;
+  align-self: center;
+}
+
+.card-col {
+  margin: 100px 150px;
+  align-items: center;
+  align-content: center;
+}
+
+.footer {
+  margin: auto;
 }
