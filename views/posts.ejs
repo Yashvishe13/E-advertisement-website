@@ -1,2 +1,66 @@
-<%- include('base') -%>
-<h1>This is posts page</h1>
+<%- include('partials/base') -%>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/13472292e5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/styles/posts.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- search bar -->
+    <div class="p-1 bg-light rounded rounded-pill shadow p-2 mb-4">
+      <div class="input-group">
+        <input
+          type="search"
+          placeholder="What're you searching for?"
+          aria-describedby="button-addon1"
+          class="form-control border-0 bg-light search-bar"
+        />
+        <div class="input-group-append">
+          <button
+            id="button-addon1"
+            type="submit"
+            class="btn btn-link text-dark border-0"
+          >
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- search bar end -->
+
+    <!-- Cards -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <% for( let index = 0; index < companyData.length; index++ ) { %>
+      <div class="col">
+        <div class="card h-100 card-item">
+          <div class="overflow">
+          <img src= <%= image %> class="card-img-top img-item" alt="..." />
+          </div>
+          <div class="card-body">
+            <% var name = companyData[index].Name %> 
+            <% name = name.replace(" ", "%20") %> 
+            <% console.log(name) %> 
+            <h5 class="card-title"><%= companyData[index].Name %> </h5>
+            <p class="card-text">
+              <%= companyData[index].Desc.substring(0,100) +" ..." %> 
+            </p>
+          </div>
+          <div>
+            <a href=<%= "/posts/" + name %> > 
+              <button type="button" class="btn btn-outline-success">Read More</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    <% } %>
+    </div>
+    <!-- Cards end -->
+  </body>
+</html>
