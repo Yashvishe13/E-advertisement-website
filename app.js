@@ -5,8 +5,6 @@ const mongoose = require("mongoose");
 
 const app = express();
 
-const companyData = [];
-
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -72,10 +70,6 @@ app.get("/posts/:company", function(req, res) {
 });
 
 app.post("/advertise", function(req, res) {
-  // console.log(req.body.companyName);
-  // console.log(req.body.companyEmail);
-  // console.log(req.body.companyLink);
-  // console.log(req.body.companyDesc);
 
   const post = new Post({
     Name  : req.body.companyName,
@@ -85,10 +79,6 @@ app.post("/advertise", function(req, res) {
   });
 
   post.save();
-
-
-
-  companyData.push(post);
 
   // console.log(companyData)
 
