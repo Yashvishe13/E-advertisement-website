@@ -16,7 +16,6 @@ const postSchema = {
     Name: {
         type: String,
         required: 'Please enter your name',
-        trim: true
     },
     Email: {type: String, required: true},
     Link:  {type: String, required: true},
